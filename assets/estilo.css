@@ -1,0 +1,26 @@
+@font-face{font-family:Inter;src:url(fonts/Inter-var.ttf) format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url(fonts/InstrumentSerif-Italic.ttf) format('truetype');font-weight:400;font-style:italic;font-display:swap}
+:root{--papel:#e0e0de;--tinta:#111;--suave:#4a4a48;--rojo:#c8102e;--tarjeta:#f2f2f0;--linea:rgba(17,17,17,.075)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background-color:var(--papel);background-image:linear-gradient(var(--linea) 1.5px,transparent 1.5px),linear-gradient(90deg,var(--linea) 1.5px,transparent 1.5px);background-size:43px 43px;color:var(--tinta);font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:17px;line-height:1.6}
+.pagina{max-width:760px;margin:0 auto;padding:40px 20px 64px}
+.cabecera{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 24px;margin-bottom:28px}
+.marca{color:var(--tinta);text-decoration:none;font-weight:900;font-size:30px;letter-spacing:-0.05em;line-height:1}
+.marca em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-0.005em;font-size:1.2em}
+nav a{color:var(--suave);text-decoration:none;font-weight:600;font-size:15px;margin-right:16px}
+nav a:last-child{margin-right:0}
+nav a[aria-current="page"],nav a:hover{color:var(--tinta);text-decoration:underline;text-decoration-color:var(--rojo);text-decoration-thickness:3px;text-underline-offset:5px}
+.tarjeta{background:var(--tarjeta);border:1.5px solid rgba(17,17,17,.08);border-radius:22px;padding:36px 32px}
+h1{font-weight:900;font-size:clamp(34px,6vw,48px);letter-spacing:-0.045em;line-height:1.02;margin:0}
+h1 em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0;font-size:1.15em}
+.raya{width:120px;height:6px;border-radius:3px;background:var(--rojo);margin:16px 0 20px}
+.fecha{color:var(--suave);font-size:14px;margin:0 0 24px}
+h2{font-weight:800;font-size:21px;letter-spacing:-0.02em;margin:32px 0 8px}
+p,li{color:#1d1d1c}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+a{color:var(--tinta);text-decoration-color:var(--rojo);text-decoration-thickness:2px;text-underline-offset:3px}
+.ingles{margin-top:40px;padding-top:8px;border-top:1.5px solid rgba(17,17,17,.12)}
+.pie{margin-top:28px;color:var(--suave);font-size:14px;text-align:center}
+@media (max-width:520px){.tarjeta{padding:26px 20px}body{font-size:16px}}
